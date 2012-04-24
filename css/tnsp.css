@@ -1,0 +1,73 @@
+html, body {
+    background-color: #F9F9F9;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Helvetica, Arial, sans-serif;
+}
+
+a:link, a:visited {
+    color: #3792B3;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+}
+
+a span {
+    display: none;
+}
+
+#header, #photos, #info, #buttons {
+    margin: 0px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+#info img {
+    margin-bottom: 1em;
+}
+
+#buttons {
+    width: 100%;
+    height: 60px;
+}
+
+a.windigolink {
+    margin: 0px auto;
+    background: url('../images/windigo_link.jpg') center 0 no-repeat;
+    height: 45px;
+    width: 360px;
+    display: block;
+}
+
+a.windigolink:hover {
+    background-position: center -45px;
+}
+
+a.btn {
+    float: left;
+    height: 44px;
+    background-color: #FF0000;
+    margin: 6px;
+}
+
+a.btn:hover {
+    background-position: 0 -44px;
+}
+
+a.ticketslink {
+    background: url('../images/ticket_btn.jpg') 0 0 no-repeat;
+    width: 113px;
+}
+
+a.facebooklink {
+    background: url('../images/facebook_btn.jpg') 0 0 no-repeat;
+    width: 130px;
+}
+
+a.emaillink {
+    background: url('../images/share_btn.jpg') 0 0 no-repeat;
+    width: 103px;
+}
+
+a.videolink {
+    background: url('../images/video_btn.jpg') 0 0 no-repeat;
+    width: 103px;
+}

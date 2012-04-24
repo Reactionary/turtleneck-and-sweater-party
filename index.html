@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>8th Annual Turtleneck And Sweater Party</title>
+        <meta name="author" content="Jarad Comingdeer">
+        <!-- Date: 2010-11-04 -->
+        
+        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/tnsp.css" />
+        <link rel="stylesheet" media="all and (max-device-width: 480px)" href="css/iphone.css">
+        
+        <!-- <link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" href="ipad-portrait.css"> 
+        <link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" href="ipad-landscape.css"> 
+        <link rel="stylesheet" media="all and (min-device-width: 1025px)" href="ipad-landscape.css"> -->
+        
+        <script language="JavaScript">
+            var photoArray = new Array("photos/tnsp_photos1.jpg","photos/tnsp_photos2.jpg", "photos/tnsp_photos3.jpg");
+            var currentPhoto;
+            var fadeIntervalId = 0;
+            var photoAlpha = 0;
+            
+            function pageInit() {
+                //document.forms["form1"].output.value += "\n" + "JavaScript is ready.\n";
+                currentPhoto = document.getElementById('photo');
+                rotateImages(0);
+            }
+            
+            function rotateImages(index) {
+                if(index >= photoArray.length) {
+                    index = 0;
+                }
+                currentPhoto.src = photoArray[index];
+                fadeImage();
+                window.setTimeout("rotateImages("+(index+1)+")",5000);
+            }
+            
+            function fadeImage() {
+                photoAlpha = 0;
+                fadeIntervalId = window.setInterval("increaseOpacity()", 30);
+            }
+            
+            function increaseOpacity() {
+                if (photoAlpha >= 1) {
+                    currentPhoto.style.opacity = 1;
+                    window.clearInterval(fadeIntervalId);
+                } else {
+                    photoAlpha += .1;
+                }
+                currentPhoto.style.opacity = photoAlpha;
+            }
+        </script>
+    </head>
+    <body onload="pageInit();">
+        <div id="header">
+            <a class="windigolink" href="http://www.windigointernational.com"><span>Windigo International Presents</span></a>
+            <img class="headerimg" src="images/tnsp_header.jpg" />
+        </div>
+        <div id="photos">
+            <img src="" name="Rotating" id="photo">
+        </div>
+        <div id="info">
+            <img class="tagline" src="images/tagline.jpg" />
+            <div id="buttons">
+                <a class="btn ticketslink" href="http://bellyupsolanabeach.frontgatesolutions.com/choose.php?a=1&lid=48084&eid=55516"><span>Tickets</span></a>
+                <a class="btn facebooklink" href="http://www.facebook.com/event.php?eid=156783797696696"><span>Facebook</span></a>
+                <a class="btn emaillink" href="mailto:?subject=8th Annual TurtleneckSweater Party&body=http://www.turtleneckandsweater.com"><span>Email</span></a>
+                <a class="btn videolink" href="http://www.youtube.com/watch?v=mBUF24cUcUw"><span>Video</span></a>
+            </div>
+            <img class="info" src="images/info.jpg" />
+        </div>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-11061971-2']);
+          _gaq.push(['_trackPageview']);
+            
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
+</html>
