@@ -14,10 +14,14 @@ a span {
     display: none;
 }
 
-#header, #photos, #info, #buttons {
+#header, #video, #info {
     margin: 0px auto;
     max-width: 500px;
     text-align: center;
+}
+
+#video {
+    margin: 30px auto;
 }
 
 #info img {
@@ -25,8 +29,10 @@ a span {
 }
 
 #buttons {
-    width: 100%;
+    margin: 0px auto;
     height: 60px;
+    text-align: center;
+    width: 398px;
 }
 
 a.windigolink {
