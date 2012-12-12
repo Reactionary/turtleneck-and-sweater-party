@@ -58,8 +58,8 @@ a.btn:hover {
     background-position: 0 -44px;
 }
 
-a.ticketslink {
-    background: url('../images/ticket_btn.jpg') 0 0 no-repeat;
+a.photolink {
+    background: url('../images/photo_btn.jpg') 0 0 no-repeat;
     width: 113px;
 }
 
