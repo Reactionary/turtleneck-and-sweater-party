@@ -16,7 +16,7 @@ a span {
 
 #header, #video, #info {
     margin: 0px auto;
-    max-width: 500px;
+    max-width: 577px;
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ a span {
     margin: 0px auto;
     height: 60px;
     text-align: center;
-    width: 398px;
+    width: 577px;
 }
 
 a.windigolink {
@@ -58,14 +58,19 @@ a.btn:hover {
     background-position: 0 -44px;
 }
 
-a.ticketslink {
-    background: url('../images/ticket_btn.jpg') 0 0 no-repeat;
+a.photolink {
+    background: url('../images/photo_btn.jpg') 0 0 no-repeat;
     width: 113px;
 }
 
 a.facebooklink {
     background: url('../images/facebook_btn.jpg') 0 0 no-repeat;
     width: 130px;
+}
+
+a.cincolink {
+    background: url('../images/cinco_btn.jpg') 0 0 no-repeat;
+    width: 179px;
 }
 
 a.emaillink {
