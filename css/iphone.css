@@ -1,0 +1,15 @@
+#header, #photos, #info, #buttons {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+}
+
+.headerimg, .info, #photo{
+    width: 100%;
+}
+
+.videolink {
+    clear: both;
+    float: none;
+    margin: 0px auto;
+}
